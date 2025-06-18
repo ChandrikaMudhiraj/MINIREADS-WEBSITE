@@ -1,0 +1,102 @@
+/* categoriespage.css */
+
+body.categories {
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  background: url('../images/categories.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 1rem;
+}
+
+header h1 {
+  font-family: 'Cormorant Garamond', serif;
+  margin: 0;
+  font-size: 2.2rem;
+  color: #ffefb3;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav ul li a {
+  color: #add8e6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Main Category Listing */
+main {
+  flex: 1;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+main h2 {
+  font-size: 2rem;
+  color: #fff8d8;
+  margin-bottom: 2rem;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.category-item {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, background 0.3s ease;
+  cursor: pointer;
+}
+
+.category-item:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.category-item h3 {
+  font-size: 1.3rem;
+  color: #ffefb3;
+  margin: 0 0 0.5rem;
+}
+
+.category-item p {
+  color: #eee;
+  font-size: 0.95rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.85);
+  font-size: 0.9rem;
+  color: #ccc;
+}

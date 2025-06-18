@@ -1,0 +1,115 @@
+/* Base body style for write page */
+body.write {
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  background: url('images/write.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Header styling */
+header {
+  background-color: rgba(0, 0, 0, 0.60);
+  padding: 1rem;
+}
+
+header h1 {
+  font-family: 'Merriweather', serif;
+  margin: 0;
+  font-size: 2rem;
+  color: #ffefb3;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav ul li a {
+  color: #add8e6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  text-decoration: underline;
+  color: #fff;
+}
+
+/* Main content form */
+.write-story {
+  flex: 1;
+  padding: 2rem;
+  text-align: center;
+}
+
+.write-story form {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 2rem auto;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+}
+
+.write-story h2 {
+  font-size: 2rem;
+  color: #ffefb3;
+  margin-bottom: 1rem;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.write-story label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+  color: #67540e;
+  text-align: left;
+}
+
+.write-story input,
+.write-story select,
+.write-story textarea {
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 6px;
+  border: none;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.write-story button {
+  background-color: #ffefb3;
+  color: #333;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.write-story button:hover {
+  background-color: #ffd700;
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin-top: 5rem;
+  font-size: 0.9rem;
+  color: #ccc;
+}

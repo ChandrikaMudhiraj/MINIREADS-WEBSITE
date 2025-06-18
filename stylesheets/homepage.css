@@ -1,0 +1,209 @@
+/* ===============================
+   Homepage Styles - homepage.css
+   =============================== */
+
+body.home {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('../images/background2.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  background-color: rgba(0, 0, 0, 0.4); /* Transparent with fallback */
+  backdrop-filter: blur(6px);
+  padding: 1rem;
+  text-align: center;
+}
+
+header h1 {
+  font-family: 'Satisfy', cursive;
+  font-size: 3.5rem;
+  color: #ffefb3;
+  letter-spacing: 2px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  padding: 0;
+  margin: 0.5rem 0 0 0;
+}
+
+nav ul li a {
+  color: #ddd;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: white;
+  text-decoration: underline;
+}
+.navbar-transparent {
+  background-color: rgba(0, 0, 0, 0.6); /* semi-transparent black */
+  backdrop-filter: blur(5px); /* optional: adds a glassy blur effect */
+}
+
+/* Hero Section */
+.hero {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2.5rem;
+  border-radius: 12px;
+  max-width: 700px;
+  margin: 2rem auto;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  text-align: center;
+}
+
+.hero h2 {
+  color: #ffd700;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-family: 'Lora', serif;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #f0e68c;
+}
+
+/* Call-to-Action Button */
+.cta-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #ffb703;
+  color: #000;
+  border-radius: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #f77f00;
+}
+
+/* Overlay Box */
+.overlay-box {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 15px;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Main Container */
+main {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  border-radius: 12px;
+  margin: auto;
+  max-width: 800px;
+}
+
+/* Preview Links */
+.preview-links {
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.preview-links h3 {
+  color: #ffefb3;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.preview-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.preview-links ul li {
+  margin: 0.7rem 0;
+}
+
+.preview-links ul li a {
+  color: #add8e6;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.preview-links ul li a:hover {
+  color: #ffd700;
+}
+
+/* Optional Cards */
+.story-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.story-card:hover {
+  transform: translateY(-5px);
+}
+
+.story-card h4 {
+  margin: 0.5rem 0;
+  color: #444;
+}
+
+.story-card p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: #ccc;
+  font-size: 0.9rem;
+  margin-top: 8rem;
+}
+
+/* Responsive Enhancements */
+@media (max-width: 768px) {
+  .overlay-box {
+    width: 90%;
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero, .preview-links {
+    padding: 1.5rem;
+    max-width: 95%;
+  }
+}
