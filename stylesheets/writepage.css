@@ -65,39 +65,41 @@ main {
   padding: 2rem;
   text-align: center;
   flex: 1;
+  padding-bottom: 40px;
 }
 
 /* Main content form */
 .write-story form {
-  background: rgba(0, 0, 0, 0.4); /* stronger contrast */
-  padding: 2.5rem;
+  background: rgba(255, 255, 255, 0.1); /* Light transparent background */
+  backdrop-filter: blur(10px);          /* Blurs background behind form */
+  -webkit-backdrop-filter: blur(10px);  /* Safari support */
+  padding: 2rem;
+  padding-bottom: 2rem;
   border-radius: 16px;
-  max-width: 600px; /* wider form */
-  margin: 2rem auto;
-  box-shadow: 0 0 12px rgba(0,0,0,0.2);
-  backdrop-filter: blur(6px);
-  z-index: 1;
-
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  max-width: 700px;
+  margin: auto;
+  color: #fff; /* Make text white for visibility */
 }
 
 .write-story label {
+ color: #ffffff;         /* or #f5f5f5 */
+  font-weight: 600;
   font-size: 1rem;
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
-  color: #f8e8a0;
+  display: block;
+  margin-bottom: 5px;
 }
 
 .write-story input,
 .write-story select,
 .write-story textarea {
   width: 100%;
-  padding: 0.8rem;
-  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.95);
   border: none;
-  margin-bottom: 1.2rem;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 20px;
   font-size: 1rem;
-  background: #fff;
-  color: #222;
 }
 
 .write-story textarea {
@@ -106,21 +108,28 @@ main {
 }
 
 .write-story button {
-  background-color: #ffefb3;
-  color: #333;
+  background-color: #ffe8b3;
   border: none;
-  padding: 0.9rem 1.8rem;
-  border-radius: 10px;
-  cursor: pointer;
+  padding: 10px 25px;
   font-size: 1rem;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 .write-story button:hover {
-  background-color: #ffd700;
+  background-color: #ffd67b;
+  transform: scale(1.05);
 }
-
+#wordCount {
+  color: #ffffff;
+  font-size: 0.95rem;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  text-align: right;
+  font-style: italic;
+  padding-right: 5px;
+}
 
 /* Footer styling */
 footer {

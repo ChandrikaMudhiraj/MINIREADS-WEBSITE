@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="xx">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <title> Write a Story - MiniReads</title>
@@ -53,9 +53,9 @@
         </select>
 
         <label for="story">Your Story:</label><br/>
-        <textarea id="story" name="story" rows="10" required></textarea><br/><br/>
-
-        <button type="submit">Submit</button>
+        <textarea id="story" name="story" rows="10" required></textarea>
+        <div id="wordCount">0 words</div>
+        <button class="btn btn-primary">Submit</button>
       </form>
     </section>
   </main>
@@ -64,12 +64,28 @@
     <p>&copy; 2025 MiniReads. All rights reserved.</p>
   </footer>
   <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const storyText = document.getElementById('story');
+    const wordCount = document.getElementById('wordCount');
+
+    const countWords = (text) => {
+      const trimmed = text.trim();
+      return trimmed === "" ? 0 : trimmed.split(/\s+/).filter(word => word !== "").length;
+    };
+
+    storyText.addEventListener("input", function () {
+      const text = storyText.value;
+      wordCount.textContent = `${countWords(text)} words`;
+    });
+
     document.querySelector("form").addEventListener("submit", function(event) {
       event.preventDefault();
       alert("Your story has been submitted!");
-      // Optionally, reset the form:5
       this.reset();
+      wordCount.textContent = "0 words";
     });
-  </script>
+  });
+</script>
+
 </body>
 </html>
