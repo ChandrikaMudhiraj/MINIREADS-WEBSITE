@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Write a Story - MiniReads</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Merriweather:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body class="write-story write">
+  <header>
+    <h1>MiniReads</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="categories.html">Categories</a></li>
+        <li><a href="write.html">Write a Story</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="write-story">
+    <section>
+      <h2>Write Your Own Story</h2>
+      <form>
+        <label for="name">Your Name:</label><br/>
+        <input type="text" id="name" name="name" required><br/><br/>
+
+        <label for="title">Story Title:</label><br/>
+        <input type="text" id="title" name="title" required><br/><br/>
+
+        <label for="category">Category:</label><br/>
+        <select id="category" name="category" required>
+          <option value="">--Select--</option>
+          <option>Fiction</option>
+          <option>Romantic</option>
+          <option>Comedy</option>
+          <option>Horror</option>
+          <option>Poetry</option>
+          <option>Kids</option>
+          <option>Adults</option>
+        </select><br/><br/>
+
+        <label for="story">Your Story:</label><br/>
+        <textarea id="story" name="story" rows="10" required></textarea><br/><br/>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 MiniReads. All rights reserved.</p>
+  </footer>
+</body>
+</html>
