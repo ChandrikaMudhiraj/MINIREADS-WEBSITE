@@ -1,13 +1,39 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff; /* optional, for contrast on dark backgrounds */
+  background-color: transparent;
   margin: 0;
-  color: #fff;
+  padding: 0;
   background: url('images/background2.jpg') no-repeat center center fixed;
   background-size: cover;
   position: relative;
    height: 100%;
   display: flex;
   flex-direction: column;
+}
+
+/* Apply Cormorant Garamond to headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+}
+
+/* Optional: styling for navigation */
+nav a {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+/* Story card headings */
+.story-card h4 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+}
+
+/* Paragraphs inside story cards */
+.story-card p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
 }
 
 .background-overlay {
@@ -32,6 +58,7 @@ header h1 {
   font-size: 3.0rem;
   color: #ffefb3;
 }
+
 
 nav ul {
   list-style: none;
@@ -58,6 +85,10 @@ main {
   padding: 2rem;
   text-align: center;
   flex: 1;
+}
+
+.category{
+  background-image: url("images/categories.jpg");
 }
 
 .category-buttons button {
@@ -122,7 +153,7 @@ main {
   text-align: left;
 }
 .write {
-  background-image: url("images/background1.jpg");
+  background-image: url("images/write.jpg");
 }
 .write-story input,
 .write-story select,
