@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="xx">
 <head>
   <meta charset="UTF-8" />
   <title> Write a Story - MiniReads</title>
@@ -26,7 +26,7 @@
   <main class="write-story">
     <section>
       <h2>Write Your Own Story</h2>
-      <form>
+      <form action="/submit-story" method="POST">
         <label for="name">Your Name:</label><br/>
         <input type="text" id="name" name="name" required><br/><br/>
 
@@ -45,6 +45,13 @@
           <option>Adults</option>
         </select><br/><br/>
 
+        <label for="language">Choose Language:</label>
+        <select name="language" id="language">
+          <option value="en">English 🇬🇧</option>
+          <option value="te">Telugu 🇮🇳</option>
+          <option value="hi">Hindi 🇮🇳</option>
+        </select>
+
         <label for="story">Your Story:</label><br/>
         <textarea id="story" name="story" rows="10" required></textarea><br/><br/>
 
@@ -56,5 +63,13 @@
   <footer>
     <p>&copy; 2025 MiniReads. All rights reserved.</p>
   </footer>
+  <script>
+    document.querySelector("form").addEventListener("submit", function(event) {
+      event.preventDefault();
+      alert("Your story has been submitted!");
+      // Optionally, reset the form:5
+      this.reset();
+    });
+  </script>
 </body>
 </html>
