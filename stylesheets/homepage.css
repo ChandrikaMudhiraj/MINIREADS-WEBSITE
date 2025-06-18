@@ -28,6 +28,14 @@ header h1 {
   color: #ffefb3;
   letter-spacing: 2px;
 }
+.site-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.8rem;
+  color: #ffefb3;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
 
 nav ul {
   list-style: none;
