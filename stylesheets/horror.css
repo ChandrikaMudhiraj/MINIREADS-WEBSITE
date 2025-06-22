@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo&family=Cormorant+Garamond:wght@600&display=swap');
+body.horror {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('../images/horror.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+body.home {
+  font-family: 'Cardo', serif;
+  background: url('../images/horrormain.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+/* Header */
+header {
+  background-color: rgba(0, 0, 0, 0.4); /* Transparent with fallback */
+  backdrop-filter: blur(6px);
+  padding: 1rem;
+  text-align: center;
+}
+
+header h1 {
+  font-family: 'Satisfy', cursive;
+  font-size: 3.5rem;
+  color: #ffefb3;
+  letter-spacing: 2px;
+}
+.site-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.8rem;
+  color: #ffefb3;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  padding: 0;
+  margin: 0.5rem 0 0 0;
+}
+
+nav ul li a {
+  color: #ddd;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: white;
+  text-decoration: underline;
+}
+.navbar-transparent {
+  background-color: rgba(0, 0, 0, 0.6); /* semi-transparent black */
+  backdrop-filter: blur(5px); /* optional: adds a glassy blur effect */
+}
+
+.story-listing {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  box-shadow: 0 0 20px red;
+}
+
+.story-listing h2 {
+  font-size: 2.5rem;
+  color: #ff4e4e;
+  margin-bottom: 1.5rem;
+}
+
+.story-listing ul {
+  padding: 0;
+  list-style: none;
+}
+
+.story-listing ul li {
+  margin-bottom: 1rem;
+}
+
+.story-listing ul li a {
+  color: #ffb3b3;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.story-listing ul li a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.story-content {
+  background-color: rgba(10, 10, 10, 0.85);
+  padding: 2.5rem;
+  max-width: 850px;
+  margin: 3rem auto;
+  border-radius: 12px;
+  box-shadow: 0 0 30px #ff4e4e;
+  font-family: 'Cardo', serif;
+}
+
+.story-content h2 {
+  font-size: 2.8rem;
+  color: #ff4e4e;
+  font-family: 'Cormorant Garamond', serif;
+  text-shadow: 1px 1px 6px black;
+  margin-bottom: 1rem;
+}
+
+.story-content p {
+  font-size: 1.15rem;
+  line-height: 2;
+  text-align: justify;
+  text-indent: 2em;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.3px;
+  color: #f1f1f1;
+}
+
+.story-content strong {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.comments {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+  border-top: 2px solid #ff4e4e;
+  margin-top: 2rem;
+  border-radius: 5px;
+}
+
+.comments textarea {
+  width: 100%;
+  height: 100px;
+  background-color: #111;
+  color: #fff;
+  border: 1px solid #ff4e4e;
+  padding: 0.5rem;
+  resize: vertical;
+}
+
+.comments button {
+  background-color: #ff4e4e;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.comments button:hover {
+  background-color: darkred;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  color: #999;
+  font-size: 0.9rem;
+}
