@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo&family=Cormorant+Garamond:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo&family=Cormorant+Garamond:wght@600&family=Playfair+Display&display=swap');
+body.poetry {
+  font-family: 'Cardo', serif;
+  margin: 0;
+  padding: 0;
+  background: url('../images/poet.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+body.home {
+  font-family: 'Cardo', serif;
+  background: url('../images/poetry.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.3); 
+  z-index: -1;
+}
+
+/* Header */
+header {
+  background-color: rgba(0, 0, 0, 0.4); /* Transparent with fallback */
+  backdrop-filter: blur(6px);
+  padding: 1rem;
+  text-align: center;
+}
+
+header h1 {
+  font-family: 'Satisfy', cursive;
+  font-size: 3.5rem;
+  color: #ffefb3;
+  letter-spacing: 2px;
+}
+.site-title {
+  font-family: 'Dancing Script', cursive;
+  letter-spacing: 2px;
+  font-size: 2.5rem;
+  color: #fdf6e3;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  padding: 0;
+  margin: 0.5rem 0 0 0;
+}
+
+nav ul li a {
+   color: #f5e8d7;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #ffffff;
+  text-decoration: underline;
+}
+.navbar-transparent {
+  background-color: rgba(0, 0, 0, 0.6); /* semi-transparent black */
+  backdrop-filter: blur(5px); /* optional: adds a glassy blur effect */
+}
+.story-listing {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  box-shadow: 0 0 20px red;
+}
+
+.story-listing h2 {
+  font-size: 2.5rem;
+  color: #ff4e4e;
+  margin-bottom: 1.5rem;
+}
+
+.story-listing ul {
+  padding: 0;
+  list-style: none;
+}
+
+.story-listing ul li {
+  margin-bottom: 1rem;
+}
+
+.story-listing ul li a {
+  color: #ffb3b3;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.story-listing ul li a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.story-content h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.8rem;
+  text-align: center;
+  color: #fff; 
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.category {
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #f0e6dc;
+  text-align: center;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+}
+
+/* Poem style */
+.poem {
+   font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  line-height: 1.8;
+  margin-bottom: 3rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fdfdfd;
+  padding: 2rem;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  border-left: 6px solid #fffef2;
+}
+
+hr.separator {
+  border: none;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.3);
+  margin: 2rem 0;
+}
+
+/* Comments */
+.comments {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #f8f1ea;
+  border-radius: 8px;
+  border-top: 2px solid #c2b9ad;
+}
+
+.comments {
+  background: rgba(255, 255, 255, 0.1); /* transparent white */
+  padding: 2rem;
+  margin-top: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  font-family: 'Cardo', serif;
+  color: #fff;
+}
+
+.comments h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.8rem;
+  color: #fdf6e3;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.comments textarea {
+  background: rgba(255,255,255,0.6);
+  border: 1px solid #d8cec1;
+  padding: 1rem;
+  font-family: 'Cardo', serif;
+  width: 100%;
+  border-radius: 8px;
+  color: #333;
+}
+
+.comments button {
+  background-color: #7b5d4c;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  margin-top: 1rem;
+  font-family: 'Cardo', serif;
+  transition: background-color 0.3s ease;
+}
+
+.comments button:hover {
+  background-color: #634c3e;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  background-color: #e9dccd;
+  color: #5c4b3c;
+  margin-top: 3rem;
+}
+
+/* for poetry.html*/
+/* Main content */
+.poetry-container {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.poetry-container h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #fff7f0;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
+
+/* Poem preview */
+.poem-preview {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  margin: 0 auto 2rem auto;
+  max-width: 700px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.poem-preview h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-family: 'Cormorant Garamond', serif;
+  color: #fdf6e3;
+}
+
+.poem-preview .excerpt {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #f3eee9;
+}
+
+.read-more-btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #7b5d4c;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-family: 'Cardo', serif;
+  transition: background-color 0.3s ease;
+}
+
+.read-more-btn:hover {
+  background-color: #5e4436;
+}
